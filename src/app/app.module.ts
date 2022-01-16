@@ -7,13 +7,23 @@ import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { FormsModule} from '@angular/forms';
 import { CreateEmployeeComponent } from './create-employee/create-employee.component';
 import { UpdateEmployeeComponent } from './update-employee/update-employee.component';
+import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
+import { WeaponDetailsComponent } from './weapon-details/weapon-details.component';
+import { WeaponListComponent } from './weapon-list/weapon-list.component';
+import { UpdateWeaponComponent } from './update-weapon/update-weapon.component';
+import { CreateWeaponComponent } from './create-weapon/create-weapon.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EmployeeListComponent,
     CreateEmployeeComponent,
-    UpdateEmployeeComponent
+    UpdateEmployeeComponent,
+    EmployeeDetailsComponent,
+    WeaponDetailsComponent,
+    WeaponListComponent,
+    UpdateWeaponComponent,
+    CreateWeaponComponent
   ],
   imports: [
     BrowserModule,

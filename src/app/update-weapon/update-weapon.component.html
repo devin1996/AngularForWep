@@ -1,0 +1,28 @@
+<div class="col-md-6 offset-md-3">
+    <h3>Update Weapon</h3>
+    <form (ngSubmit)="onSubmit()">
+
+        <div class="form-group">
+            <label> Title</label>
+            <input type="text" class="form-control" id="title" [(ngModel)]="weapon.title" name="title">
+        </div>
+
+        <div class="form-group">
+            <label>Category</label>
+            <input type="text" class="form-control" id="category" [(ngModel)]="weapon.category" name="category">
+        </div>
+
+        <div class="form-group">
+            <label>Description</label>
+            <input type="text" class="form-control" id="description" [(ngModel)]="weapon.description" name="description">
+        </div>
+
+        <div class="form-group">
+            <label>Ammunition</label>
+            <input type="text" class="form-control" id="ammunition" [(ngModel)]="weapon.ammunition" name="ammunition">
+        </div>
+        <br>
+        <button class="btn btn-success" type="submit">Submit</button>
+
+    </form>
+</div>
