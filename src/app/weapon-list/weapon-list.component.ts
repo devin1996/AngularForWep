@@ -38,5 +38,10 @@ export class WeaponListComponent implements OnInit {
     })
   }
 
+  weaponDetails(id: number) {
+    this.router.navigate(['weapon-details', id]);
+  }
+
+
   
 }

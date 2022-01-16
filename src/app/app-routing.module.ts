@@ -8,6 +8,7 @@ import { UpdateEmployeeComponent } from './update-employee/update-employee.compo
 import { WeaponListComponent } from './weapon-list/weapon-list.component';
 import { CreateWeaponComponent } from './create-weapon/create-weapon.component';
 import { UpdateWeaponComponent } from './update-weapon/update-weapon.component';
+import { WeaponDetailsComponent } from './weapon-details/weapon-details.component';
 
 const routes: Routes = [
   {path: 'employees', component: EmployeeListComponent},
@@ -18,7 +19,8 @@ const routes: Routes = [
 
   {path: 'weapons', component: WeaponListComponent},
   {path: 'create-weapon', component: CreateWeaponComponent},
-  {path: 'update-weapon/:id', component: UpdateWeaponComponent}
+  {path: 'update-weapon/:id', component: UpdateWeaponComponent},
+  {path: 'weapon-details/:id', component: WeaponDetailsComponent }
 
 ];
 
