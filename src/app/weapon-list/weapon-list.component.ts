@@ -12,6 +12,8 @@ import { Router } from '@angular/router';
 export class WeaponListComponent implements OnInit {
 
   weapons : Weapon[];
+  weapon: Weapon
+  
 
   constructor(private weaponservice: WeaponserviceService,
     private router: Router) { }
@@ -21,9 +23,15 @@ export class WeaponListComponent implements OnInit {
   }
 
   private getWeapons() {
+
     this.weaponservice.getWeaponList().subscribe(data => {
       this.weapons = data;
+      // for(let n = 0; n <= this.weapons.length; n++){
+      //   console.dir(this.weapon.title);
+      //  }
     });
+    
+
   }
 
   updateWeapon(id: number) {

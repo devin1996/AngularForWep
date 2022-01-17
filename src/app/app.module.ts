@@ -12,6 +12,7 @@ import { WeaponDetailsComponent } from './weapon-details/weapon-details.componen
 import { WeaponListComponent } from './weapon-list/weapon-list.component';
 import { UpdateWeaponComponent } from './update-weapon/update-weapon.component';
 import { CreateWeaponComponent } from './create-weapon/create-weapon.component';
+import { AdminLoginComponent } from './admin-login/admin-login.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { CreateWeaponComponent } from './create-weapon/create-weapon.component';
     WeaponDetailsComponent,
     WeaponListComponent,
     UpdateWeaponComponent,
-    CreateWeaponComponent
+    CreateWeaponComponent,
+    AdminLoginComponent
   ],
   imports: [
     BrowserModule,

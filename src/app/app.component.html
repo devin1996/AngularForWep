@@ -1,21 +1,23 @@
 <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
-    <ul class = "navbar-nav">
-        <li class = "nav-item">
-            <a routerLink="weapons" routerLinkActive="active" class="nav-link" >Home</a>
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a routerLink="weapons" routerLinkActive="active" class="nav-link">Home</a>
         </li>
-        <li class = "nav-item">
-            <a routerLink="create-weapon" routerLinkActive="active" class="nav-link" >Add New Weapon</a>
+        <li class="nav-item">
+            <a routerLink="create-weapon" routerLinkActive="active" class="nav-link">Add New Weapon</a>
+
         </li>
+        <a routerLink="admin-login" routerLinkActive="active" class="nav-link" >Sign Out</a>
     </ul>
 </nav>
 
 
 <h1 class="text-center"> {{title}} </h1>
-<div class = "container">
+<div class="container">
     <router-outlet></router-outlet>
 </div>
-<footer class = "footer">
-    <div class = "container">
+<!-- <footer class="footer">
+    <div class="container">
         <span>All Rights Reserved 2022</span>
     </div>
-</footer>
+</footer> -->

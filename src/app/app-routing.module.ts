@@ -9,18 +9,21 @@ import { WeaponListComponent } from './weapon-list/weapon-list.component';
 import { CreateWeaponComponent } from './create-weapon/create-weapon.component';
 import { UpdateWeaponComponent } from './update-weapon/update-weapon.component';
 import { WeaponDetailsComponent } from './weapon-details/weapon-details.component';
+import { AdminLoginComponent } from './admin-login/admin-login.component';
 
 const routes: Routes = [
   {path: 'employees', component: EmployeeListComponent},
   {path: 'create-employee', component: CreateEmployeeComponent},
-  {path: '', redirectTo: 'weapons', pathMatch: 'full'},
+  {path: '', redirectTo: 'admin-login', pathMatch: 'full'},
   {path: 'update-employee/:id', component: UpdateEmployeeComponent},
   {path: 'employee-details/:id', component: EmployeeDetailsComponent},
 
   {path: 'weapons', component: WeaponListComponent},
   {path: 'create-weapon', component: CreateWeaponComponent},
   {path: 'update-weapon/:id', component: UpdateWeaponComponent},
-  {path: 'weapon-details/:id', component: WeaponDetailsComponent }
+  {path: 'weapon-details/:id', component: WeaponDetailsComponent },
+
+  {path: 'admin-login', component: AdminLoginComponent}
 
 ];
 

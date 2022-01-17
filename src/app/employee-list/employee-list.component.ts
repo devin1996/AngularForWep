@@ -17,12 +17,16 @@ export class EmployeeListComponent implements OnInit {
 
   ngOnInit(): void {
     this.getEmployees();
+    console.log(" The iteration number:");
   }
 
   private getEmployees() {
     this.employeeService.getEmployeesList().subscribe(data => {
       this.employees = data;
     });
+   // for(let n = 0; n <= this.employees.length; n++){
+      console.log(" The iteration number:");
+     // }
   }
 
   employeeDetails(id: number) {
