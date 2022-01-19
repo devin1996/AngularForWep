@@ -1,6 +1,4 @@
-<h1 class="text-center p-3 mb-2 bg-dark text-white"> {{title}} </h1>
-
-<!-- <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+<nav *ngIF="nav.visible" class="navbar navbar-expand-sm bg-dark navbar-dark">
     <ul class="navbar-nav">
         <li class="nav-item">
             <a routerLink="weapons" routerLinkActive="active" class="nav-link">Home</a>
@@ -11,8 +9,4 @@
         </li>
         <a routerLink="admin-login" routerLinkActive="active" class="nav-link" >Sign Out</a>
     </ul>
-</nav> -->
-
-<div class="container">
-    <router-outlet></router-outlet>
-</div>
+</nav>

@@ -13,6 +13,10 @@ import { WeaponListComponent } from './weapon-list/weapon-list.component';
 import { UpdateWeaponComponent } from './update-weapon/update-weapon.component';
 import { CreateWeaponComponent } from './create-weapon/create-weapon.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
+import { NavbarComponent } from './navbar/navbar.component';
+
+import { NavbarService } from './navbar.service';
+import { WorldspaceserviceComponent } from './worldspaceservice/worldspaceservice.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +29,9 @@ import { AdminLoginComponent } from './admin-login/admin-login.component';
     WeaponListComponent,
     UpdateWeaponComponent,
     CreateWeaponComponent,
-    AdminLoginComponent
+    AdminLoginComponent,
+    NavbarComponent,
+    WorldspaceserviceComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +39,7 @@ import { AdminLoginComponent } from './admin-login/admin-login.component';
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [NavbarService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

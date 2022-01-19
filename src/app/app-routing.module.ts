@@ -10,6 +10,7 @@ import { CreateWeaponComponent } from './create-weapon/create-weapon.component';
 import { UpdateWeaponComponent } from './update-weapon/update-weapon.component';
 import { WeaponDetailsComponent } from './weapon-details/weapon-details.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
+import { WorldspaceserviceComponent } from './worldspaceservice/worldspaceservice.component';
 
 const routes: Routes = [
   {path: 'employees', component: EmployeeListComponent},
@@ -23,7 +24,8 @@ const routes: Routes = [
   {path: 'update-weapon/:id', component: UpdateWeaponComponent},
   {path: 'weapon-details/:id', component: WeaponDetailsComponent },
 
-  {path: 'admin-login', component: AdminLoginComponent}
+  {path: 'admin-login', component: AdminLoginComponent},
+  {path: 'world-space', component:WorldspaceserviceComponent}
 
 ];
 

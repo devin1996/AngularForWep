@@ -18,8 +18,9 @@ export class EmployeeDetailsComponent implements OnInit {
     this.id = this.route.snapshot.params['id'];
 
     this.employee = new Employee();
-    this.employeService.getEmployeeById(this.id).subscribe( data => {
+    this.employeService.getEmployeeById(this.id).subscribe(data => {
       this.employee = data;
+
     });
   }
 

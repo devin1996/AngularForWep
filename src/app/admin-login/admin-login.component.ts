@@ -3,6 +3,7 @@ import { Admin } from '../admin';
 import { AdminServiceService } from '../admin-service.service';
 import { ActivatedRoute } from '@angular/router';
 import { Router } from '@angular/router';
+import { NavbarService } from '../navbar.service';
 
 @Component({
   selector: 'app-admin-login',
@@ -14,9 +15,10 @@ export class AdminLoginComponent implements OnInit {
   admin: Admin = new Admin();
 
   constructor(private adminService: AdminServiceService,
-    private router: Router) { }
+    private router: Router, public nav: NavbarService) { }
 
   ngOnInit(): void {
+    this.nav.show();
   }
 
   loginvalidation(){

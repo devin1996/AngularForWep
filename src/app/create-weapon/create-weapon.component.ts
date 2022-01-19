@@ -32,5 +32,21 @@ export class CreateWeaponComponent implements OnInit {
     console.log(this.weapon);
     this.saveWeapon();
   } 
+  home() {
+    this.router.navigate(['weapons']);
+  }
+
+  createweapon() {
+    this.router.navigate(['create-weapon']);
+  }
+
+  newfeature() {
+    this.router.navigate(['world-space']);
+
+  }
+  
+  logout() {
+    this.router.navigate(['admin-login']);
+  }
 
 }

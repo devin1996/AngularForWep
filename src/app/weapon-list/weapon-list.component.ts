@@ -50,6 +50,22 @@ export class WeaponListComponent implements OnInit {
     this.router.navigate(['weapon-details', id]);
   }
 
+  home() {
+    this.router.navigate(['weapons']);
+  }
+
+  createweapon() {
+    this.router.navigate(['create-weapon']);
+  }
+
+  newfeature() {
+    this.router.navigate(['world-space']);
+
+  }
+  logout() {
+    this.router.navigate(['admin-login']);
+  }
+
 
   
 }
